@@ -24,20 +24,17 @@ _column_transformer._RemainderColsList = _RemainderColsList
 
 
 PROJECT_DIR = Path.cwd()
-MODELS_DIR = PROJECT_DIR / "models"
-DATA_DIR = PROJECT_DIR / "data" / "processed"
-REPORTS_DIR = PROJECT_DIR / "reports"
 
-CLASSIFICATION_MODEL_PATH = MODELS_DIR / "best_classification_model.joblib"
-REGRESSION_MODEL_PATH = MODELS_DIR / "best_regression_model.joblib"
-METADATA_PATH = MODELS_DIR / "model_metadata.json"
-CLEAN_DATA_PATH = DATA_DIR / "perm_cleaned_fy2025_q4.csv"
+CLASSIFICATION_MODEL_PATH = PROJECT_DIR / "best_classification_model.joblib"
+REGRESSION_MODEL_PATH = PROJECT_DIR / "best_regression_model.joblib"
+METADATA_PATH = PROJECT_DIR / "model_metadata.json"
+CLEAN_DATA_PATH = PROJECT_DIR / "perm_cleaned_fy2025_q4.csv"
 
-IMPORTANCE_PATH = REPORTS_DIR / "permutation_importance.csv"
-CLASSIFICATION_RESULTS_PATH = REPORTS_DIR / "classification_results.csv"
-REGRESSION_RESULTS_PATH = REPORTS_DIR / "regression_results.csv"
-FAIRNESS_RESULTS_PATH = REPORTS_DIR / "fairness_group_metrics.csv"
-TAIL_RESULTS_PATH = REPORTS_DIR / "tail_error_analysis.csv"
+IMPORTANCE_PATH = PROJECT_DIR / "permutation_importance.csv"
+CLASSIFICATION_RESULTS_PATH = PROJECT_DIR / "classification_results.csv"
+REGRESSION_RESULTS_PATH = PROJECT_DIR / "regression_results.csv"
+FAIRNESS_RESULTS_PATH = PROJECT_DIR / "fairness_group_metrics.csv"
+TAIL_RESULTS_PATH = PROJECT_DIR / "tail_error_analysis.csv"
 
 
 st.set_page_config(
